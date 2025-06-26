@@ -11,7 +11,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get('/test', (res) => {
+app.get('/test', (_req, res) => {
   res.send('Backend is alive');
 })
 
