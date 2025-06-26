@@ -6,8 +6,8 @@
   "scripts": {
     "start": "env-cmd -f .env.production vite",
     "dev": "env-cmd -f .env.staging vite",
-    "build:uat": "npm run build:prod -- --mode staging",
-    "build:prod": "vite build",
+    "build:dev": "npm run build:prod -- --mode staging",
+    "build": "vite build --mode production",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },

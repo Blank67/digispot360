@@ -1,6 +1,7 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const cors = require('cors');
+const serverless = require('serverless-http');
 
 const NODE_ENV = process.env.NODE_ENV || 'staging';
 dotenv.config({ path: `.env.${NODE_ENV}` });
@@ -18,3 +19,6 @@ app.get('/test', (res) => {
 app.listen(PORT, () => {
   console.log(`Backend running....`);
 });
+
+module.exports = app;
+module.exports.handler = serverless(app);
