@@ -12,6 +12,7 @@ export default defineConfig({
       "@pages": "/src/pages",
       "@utils": "/src/utils",
       "@hoc": "/src/hoc",
+      "@store": "/src/store",
     },
   },
   envPrefix: "VITE_",

@@ -30,7 +30,8 @@
       "@fonts/*": ["./src/fonts/*"],
       "@pages/*": ["./src/pages/*"],
       "@utils/*": ["./src/utils/*"],
-      "@hoc/*": ["./src/hoc/*"]
+      "@hoc/*": ["./src/hoc/*"],
+      "@store/*": ["./src/store/*"]
     }
   },
   "include": ["src"]

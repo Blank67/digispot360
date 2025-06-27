@@ -7,12 +7,13 @@ import {
   RiSubtractLine,
 } from "@remixicon/react";
 import "./CustomSidebar.scss";
+import type { RootState } from "@store/index";
+import { useSelector } from "react-redux";
 
-interface CustomSidebarProps {
-  collapsed: boolean;
-}
-
-export const CustomSidebar = ({ collapsed }: CustomSidebarProps) => {
+export const CustomSidebar = () => {
+  const { collapsed } = useSelector(
+    (state: RootState) => state.customSideBarReducer
+  );
   return (
     <Sidebar
       collapsed={collapsed}
