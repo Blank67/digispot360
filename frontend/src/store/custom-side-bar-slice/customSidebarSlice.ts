@@ -1,9 +1,24 @@
 import { type PayloadAction, createSlice } from "@reduxjs/toolkit";
 import type { CustomSidebarSliceState } from "@utils/types";
 
+const pathObject = {
+  "/dashboard": "dashboard",
+  "/notice-add": "notice",
+  "/notice-list": "notice",
+  "/template-add": "templates",
+  "/template-list": "templates",
+  "/clients-add": "clients",
+  "/clients-list": "clients",
+  "/physical-copies-single-add": "physicalCopies",
+  "/physical-copies-bulk-add": "physicalCopies",
+  "/physical-copies-list": "physicalCopies",
+  "/reports": "reports",
+};
+
 const initialState: CustomSidebarSliceState = {
   collapsed: false,
-  openSubMenu: null,
+  openSubMenu:
+    pathObject[window.location.pathname as keyof typeof pathObject] || null,
 };
 
 const customSideBarSlice = createSlice({

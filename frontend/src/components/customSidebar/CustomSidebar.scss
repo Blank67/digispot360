@@ -6,7 +6,8 @@
   }
   .ps-menuitem-root {
     .ps-menu-button {
-      &:hover {
+      &:hover,
+      &.active {
         background-color: #405189;
         color: #fff;
       }
