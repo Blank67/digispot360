@@ -82,13 +82,13 @@ export const CustomSidebar = ({ collapsed }: CustomSidebarProps) => {
           </MenuItem>
           <MenuItem
             icon={<RiSubtractLine />}
-            component={<Link to="/physical-copies-bulk-list" />}
+            component={<Link to="/physical-copies-bulk-add" />}
           >
             Bulk Upload
           </MenuItem>
           <MenuItem
             icon={<RiSubtractLine />}
-            component={<Link to="/physical-copies-/list" />}
+            component={<Link to="/physical-copies-list" />}
           >
             List
           </MenuItem>

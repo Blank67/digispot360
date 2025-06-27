@@ -11,6 +11,7 @@ export default defineConfig({
       "@fonts": "/src/fonts",
       "@pages": "/src/pages",
       "@utils": "/src/utils",
+      "@hoc": "/src/hoc",
     },
   },
   envPrefix: "VITE_",

@@ -29,7 +29,8 @@
       "@components/*": ["./src/components/*"],
       "@fonts/*": ["./src/fonts/*"],
       "@pages/*": ["./src/pages/*"],
-      "@utils/*": ["./src/utils/*"]
+      "@utils/*": ["./src/utils/*"],
+      "@hoc/*": ["./src/hoc/*"]
     }
   },
   "include": ["src"]
