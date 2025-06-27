@@ -1,0 +1,19 @@
+.custom-sidebar {
+  color: white;
+  .sidebar-header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .ps-menuitem-root {
+    .ps-menu-button {
+      &:hover {
+        background-color: #405189;
+        color: #fff;
+      }
+      color: #abb9e8;
+    }
+  }
+  .ps-submenu-content {
+    background-color: #405189;
+  }
+}

@@ -19,7 +19,6 @@ export const LoginComponent = () => {
                 <Form.Label>Login Id</Form.Label>
                 <Form.Control type="email" placeholder="Enter email" />
               </Form.Group>
-
               <Form.Group className="mb-3">
                 <div className="float-end">
                   <Link to="/demo" className="text-muted">
@@ -29,7 +28,6 @@ export const LoginComponent = () => {
                 <Form.Label>Password</Form.Label>
                 <Form.Control type="password" placeholder="Password" />
               </Form.Group>
-
               <Button type="submit" className="w-100" variant="success">
                 Sign In
               </Button>
